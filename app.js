@@ -9,7 +9,9 @@ Esercizio : Creiamo il nostro blog personale e giorno dopo giorno lo potremo arr
 
 .. OK Configuriamo gli asset statici sull’applicazione in modo che si possano visualizzare le immagini associate ad ogni post.
 
-.. Testare su postman
+.. OK Testare su postman 
+- test effetuati : 1) Get + http://localhost:3000/ = "server del mio blog", 2) Get + http://localhost:3000/bacheca = array of 5 objects 
+
 */
 
 // importo il modulo express installato tramite: npm install express, lines 15-30 copied from https://expressjs.com/en/starter/hello-world.html 
