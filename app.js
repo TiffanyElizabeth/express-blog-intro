@@ -24,10 +24,10 @@ const port = 3000
 // il primo parametre "/" = la rotta (url) sui cui rimango in ascoloto di eventuali richieste 
 // il secondo parametre e una funzione (req, res) => {} - la funzione che gestirà la richiesta da parte del cliente e restiuirà la risposta 
 app.get('/', (req, res) => {
-  res.send('server del mio blog')
+  res.send('server del mio blog') // res.send invia un contenuto testuale/html (slide 23 express intro)
 })
 
-// chiede a express di abilitare la possibilita di leggere file statici (qui facciamo perché dobbiamo mettere le immagini) (slides 30-31 of powerpoint)
+// chiede a express di abilitare la possibilita di leggere file statici (qui facciamo perché dobbiamo mettere le immagini) (slides 30-31 of powerpoint) - e un middleware 
 app.use(express.static('public'));
 
 // una rotta /bacheca che restituisca un oggetto json con la lista dei post (una lista di almeno 5 post, per ognuno indicare titolo, contenuto, immagine e tags (tags è un array di stringhe))
